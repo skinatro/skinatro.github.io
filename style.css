@@ -1,5 +1,34 @@
 
 body {
-    background: rgb(22,22,29);
-    background: linear-gradient(1deg, rgba(22,22,29,1) 1%, rgba(31,31,58,1) 48%, rgba(59,47,74,1) 90%);
+    height: 100%;
+    margin: 0;
+    background:url(assets/mocha-bg.png);
+    background-repeat: repeat;
+} 
+
+.header_title {
+    color: #cdd6f4;
+    font-size: 50px;
+    text-align:center
+}
+
+hr {
+    color: #f5e0dc;
+    width: 85%;
+    margin: 0 auto;
+}
+
+p {
+    color: #bac2de;
+    margin: 150px;
+}
+
+.copyright{
+    color: #a6adc8;
+    font-size: 15px;
+}
+
+nav{
+    display: inline-block;
+    text-align: center;
 }
