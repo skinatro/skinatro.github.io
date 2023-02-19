@@ -4,23 +4,32 @@ body {
     margin: 0;
     background:url(assets/mocha-bg.png);
     background-repeat: repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 } 
 
 .header_title {
     color: #cdd6f4;
-    font-size: 50px;
-    text-align:center
+    font-size: 30px;
+    text-align: center  ;
+    font-family: 'IBM Plex Serif', serif;
 }
 
 hr {
     color: #f5e0dc;
-    width: 85%;
-    margin: 0 auto;
+    width: 35%;
+    margin-bottom: 0.25%;
 }
 
-p {
+article {
     color: #bac2de;
-    margin: 150px;
+    flex: 1;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Overpass Mono', monospace;
 }
 
 .copyright{
@@ -28,7 +37,9 @@ p {
     font-size: 15px;
 }
 
-nav{
+
+footer{
+    min-height: 10%;
     display: inline-block;
     text-align: center;
 }
