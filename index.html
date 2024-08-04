@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skinatro's website (WIP)</title>
-    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@500&display=swap" rel="stylesheet"> 
-      <span class="header_title">
-        <h1>SKIAAAA!!!</h1>
-      </span>
-      <hr>  
-    </header>
-    <article>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacus ex, accumsan viverra gravida eu, convallis id enim. Nam volutpat eros at metus tempus cursus vel viverra quam. Nam imperdiet ipsum nibh, non porta dolor fermentum feugiat. Phasellus dapibus ante quis massa sodales, vitae suscipit magna rhoncus. Sed interdum lectus ut ligula dignissim dignissim. Sed est lacus, luctus at risus sit amet, bibendum condimentum urna. Nullam mattis est viverra elit fringilla, id finibus felis tincidunt.
-<br>
-Quisque sagittis est vel arcu pharetra eleifend. Cras maximus tellus at tortor faucibus facilisis. Quisque tempor felis nec semper faucibus. Morbi faucibus mi eu turpis ultrices suscipit. Quisque commodo at nisl id mattis. Integer vitae rutrum orci, ultrices imperdiet ipsum. Donec rutrum metus ac neque eleifend finibus. Duis egestas arcu lorem, non cursus ante vestibulum sed. Duis laoreet sit amet metus ut elementum. Nam iaculis volutpat vulputate. Phasellus ac venenatis enim, non convallis tortor. Quisque ultrices elit ac gravida ultrices.
-<br>
-Quisque dictum maximus odio eget posuere. Sed dictum at quam sed auctor. Suspendisse volutpat ornare elementum. Nam tortor orci, elementum sed hendrerit in, gravida at nibh. Mauris volutpat finibus risus sed ultrices. Etiam id posuere nunc, eu volutpat nunc. Proin a nisl sed metus finibus ultrices a sit amet erat. Donec sit amet turpis at purus euismod suscipit. Nam orci ex, vehicula nec diam fringilla, finibus tristique tellus. Etiam et sapien nec dui pretium imperdiet in id dolor. Nulla non ante et tellus laoreet bibendum tempor nec mauris. Quisque ac faucibus ex. Morbi hendrerit arcu non auctor ultrices. Sed eget sem tortor. Phasellus ut odio porta, volutpat elit in, vehicula enim.
-<br>
-Mauris sit amet venenatis nisl, vehicula eleifend lorem. Duis ultricies ac orci ut aliquam. Nulla et condimentum lectus. Aenean eu lectus vitae ligula scelerisque molestie. Aliquam ultricies nunc ut elit luctus malesuada. Nulla metus metus, imperdiet vitae tellus sit amet, consectetur semper erat. Nunc semper accumsan est, ac viverra leo lobortis vel. Donec rhoncus id ex nec ullamcorper. Mauris vitae faucibus lacus. Donec leo odio, dapibus in cursus sit amet, porta quis tortor. Maecenas urna nulla, feugiat eget quam quis, eleifend maximus arcu. Aliquam non ipsum faucibus, dictum nunc sit amet, porta nunc. Nullam at enim velit. Sed cursus at magna quis blandit. Nulla pharetra mollis urna. Integer velit purus, ultricies ut tellus eget, rhoncus consectetur nunc.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
 
-    </article>
-    <footer>
-      <hr>
-      <nav>
-      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">
-        <img src="assets/gplv3.png">
-      </a>
-      </nav>
-      <span class="copyright">
-        &copy Copyright 2023 Skinatro. All lefts Reserved.
-      </span>
-    </footer>
-  </body>
+<body class="container" class="scroller">
+  <nav class="navigator">
+    <a href="./tags/">index<span class="material-symbols-outlined">arrow_outward</span></a>
+    <a href="./photos/">photos<span class="material-symbols-outlined">arrow_outward</span></a>
+    <a href="./git/">git<span class="material-symbols-outlined">arrow_outward</span></a>
+    <a href="./workflow/">daily<span class="material-symbols-outlined">arrow_outward</span></a>
+    <a href="./music">music<span class="material-symbols-outlined">arrow_outward</span></a>
+    <a href="./cv.pdf">cv<span class="material-symbols-outlined">arrow_outward</span></a>
+    <div class="nav-spacer"></div>
+    <button id="themeToggle" class="theme-toggle">
+      <span class="material-symbols-outlined">light_mode</span>
+    </button>
+  </nav>
+</body>
+
+
+ <div class="mid">
+  <div class="mid-text">
+    <div class="title">
+      <p class="main-title">Om Kate</p>
+      <p>Developer, Engineer, Student & Tinkerer</p>
+    </div>
+    <div class="content">
+      <p>I am also known as Skinatro or Mirage. As an Electronics Engineering student, I have a strong interest in low-level system programming and computer graphics.</p>
+      <br>
+      <p>I'm currently involved in CSI and Alumni Association committees at my college, serving as the Jt. Tech Head and Graphics Executive. Additionally, I'm also working as a webmaster at another organization.</p>
+    </div>
+  </div>
+
+  <div class="image">
+    <img loading="lazy" src="./assets/hero.webp" alt="Photo Taken Just After Rain">
+    <br>
+    <em>A picture I took just after heavy rain (July 2023)</em>
+  </div>
+  </div>  
+  <div class="spacer"></div>
+
+  <footer class="footer">
+    <hr>
+    <p>Skinatro 2024 | Static Site Generator is WIP :3</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('light-theme');
+        updateIcon();
+    });
+
+    function updateIcon() {
+        const icon = themeToggle.querySelector('.material-symbols-outlined');
+        if (body.classList.contains('light-theme')) {
+            icon.textContent = 'dark_mode';
+        } else {
+            icon.textContent = 'light_mode';
+        }
+    }
+});
+  </script>
+</body>
 </html>
