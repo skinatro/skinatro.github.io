@@ -93,7 +93,20 @@ table {
     }
 
     .nav-spacer {
-      flex-grow: 1
+      flex-grow: 1;
+      max-width:fit-content
+    }
+
+    .theme-toggle {
+      color: rgb(173,173,173,100);
+      font-size: 1.5rem;
+      text-decoration: none;
+      border: 0;
+      background: 0 0;
+      margin-left: auto;
+      align-items: center;
+      cursor: pointer;
+      margin-right: 1rem;
     }
 
     .mid {
@@ -163,39 +176,57 @@ table {
       background-color: #adadad
     }
 
-    .theme-toggle {
-      color: rgb(173,173,173,100);
-      font-size: 1.5rem;
-      text-decoration: none;
-      border: 0;
-      background: 0 0;
-      margin-left: auto;
-      align-items: center;
-      cursor: pointer;
-    }
+/* Light Theme */
+body.light-theme {
+  background-color: #d9e9d2; 
+}
 
-    body.light-theme {
-      background-color: #fff;
-      color: #333
-    }
+body.light-theme .title h1 {
+  color: #4a5d23; 
+}
 
-    body.light-theme .title h1 {
-      color: #4a7c59
-    }
+body.light-theme .material-symbols-outlined,
+body.light-theme .theme-toggle .material-symbols-outlined ,
+body.light-theme .mid .content {
+  color: #3a471f  ; 
+}
 
-    body.light-theme .navigator a,body.light-theme .theme-toggle {
-      color: #333
-    }
+body.light-theme .navigator a{
+  color: #4a5d23; 
+}
+
+body.light-theme .footer {
+  color: #4a5d23; 
+}
+
+body.light-theme .footer hr {
+  background-color: #4a5d23; 
+}
+
+body.light-theme .image em {
+  color: #3a4a2f; 
+}
+
+/*Mobile Screen*/
 
 @media (max-width: 768px) {
   .container {
-    max-width: 95%;
+    max-width: 90%;
     padding: 1vh 1vw 
+  }
+
+  .navigator{
+    gap: 0.3rem 0.5rem
   }
 
   .navigator a {
     font-size: 1.2rem; 
     margin-right: .1rem;
+  }
+
+  .theme-toggle{
+    margin-left: 0px;
+    /*margin-right: 1rem;*/
   }
 
   .mid .title .main-title {
@@ -215,3 +246,4 @@ table {
     padding: .5rem 0; 
     }
 }
+
