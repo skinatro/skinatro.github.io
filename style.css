@@ -1,84 +1,4 @@
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -146,7 +66,7 @@ body {
     font-family: Inter,serif;
     padding: 2vh 2vw;
     max-width: 55%;
-    min-height: 100vh
+    min-height: 100vh;
 }
 
 .navigator {
@@ -203,6 +123,12 @@ body {
     box-sizing: border-box
 }
 
+.mid-text{
+    animation-name:slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
 .mid .title .main-title {
     color: #304f2f;
     font-size: 4rem;
@@ -236,7 +162,13 @@ body {
 }
 
 .image em {
-    font-style: oblique
+    font-style: oblique;
+}
+/*tried keepping the animation tags in em tag but didnt work*/
+.image p{
+    animation-name:slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
 }
 
 .spacer {
@@ -278,6 +210,11 @@ body.light-theme .footer hr {
 
 body.light-theme .image em {
     color: #3a4a2f
+}
+
+/*text slide in entrance animation*/
+@keyframes slideIn{
+    from{transform: translateX(0.5em)}
 }
 
 /*Small Screen Style*/
