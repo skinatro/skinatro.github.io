@@ -1,79 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HomePage</title>
-  <link href="./style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="container">
-  <nav class="navigator">
-    <a href="./">home <span class="material-symbols-outlined">arrow_outward</span></a>
-    <br>
-    <a href="./tags/">index<span class="material-symbols-outlined">arrow_outward</span></a>
-    <a href="./photos/">photos<span class="material-symbols-outlined">arrow_outward</span></a>
-    <a href="./git/">git<span class="material-symbols-outlined">arrow_outward</span></a>
-    <a href="./workflow/">daily<span class="material-symbols-outlined">arrow_outward</span></a>
-    <a href="./music">music<span class="material-symbols-outlined">arrow_outward</span></a>
-    <a href="./cv.pdf">cv<span class="material-symbols-outlined">arrow_outward</span></a>
-    <div class="nav-spacer"></div>
-    <button id="themeToggle" class="theme-toggle">
-      <span class="material-symbols-outlined">light_mode</span>
-    </button>
-  </nav>
-</body>
+  <body class="container">
+    <nav class="navigator">
+      <a href="./"
+        >home <span class="material-symbols-outlined">arrow_outward</span></a
+      >
+      <br />
+      <a href="./tags/"
+        >index<span class="material-symbols-outlined">arrow_outward</span></a
+      >
+      <a href="./photos/"
+        >photos<span class="material-symbols-outlined">arrow_outward</span></a
+      >
+      <a href="./git/"
+        >git<span class="material-symbols-outlined">arrow_outward</span></a
+      >
+      <a href="./workflow/"
+        >daily<span class="material-symbols-outlined">arrow_outward</span></a
+      >
+      <a href="./music"
+        >music<span class="material-symbols-outlined">arrow_outward</span></a
+      >
+      <a href="./cv.pdf"
+        >cv<span class="material-symbols-outlined">arrow_outward</span></a
+      >
+      <div class="nav-spacer"></div>
+      <button id="themeToggle" class="theme-toggle">
+        <span class="material-symbols-outlined">light_mode</span>
+      </button>
+    </nav>
 
+    <div class="mid">
+      <div class="mid-text">
+        <div class="title">
+          <p class="main-title">Om Kate</p>
+          <p>Developer, Engineer, Student & Tinkerer</p>
+        </div>
+        <div class="content">
+          <p>
+            I am also known as Skinatro or Mirage. As an Electronics Engineering
+            student, I have a strong interest in low-level system programming
+            and computer graphics.
+          </p>
+          <br />
+          <p>
+            I'm currently involved in CSI and Alumni Association committees at
+            my college, serving as the Jt. Tech Head and Graphics Executive.
+            Additionally, I'm also working as a webmaster at another
+            organization.
+          </p>
+        </div>
+      </div>
 
- <div class="mid">
-  <div class="mid-text">
-    <div class="title">
-      <p class="main-title">Om Kate</p>
-      <p>Developer, Engineer, Student & Tinkerer</p>
+      <div class="image">
+        <img src="./assets/hero.webp" alt="Photo Taken Just After Rain" />
+        <br />
+        <em>A photo I took immediately after a heavy rain in July 2023</em>
+      </div>
     </div>
-    <div class="content">
-      <p>I am also known as Skinatro or Mirage. As an Electronics Engineering student, I have a strong interest in low-level system programming and computer graphics.</p>
-      <br>
-      <p>I'm currently involved in CSI and Alumni Association committees at my college, serving as the Jt. Tech Head and Graphics Executive. Additionally, I'm also working as a webmaster at another organization.</p>
-    </div>
-  </div>
+    <div class="spacer"></div>
 
-  <div class="image">
-    <img src="./assets/hero.webp" alt="Photo Taken Just After Rain">
-    <br>
-    <em>A photo I took immediately after a heavy rain in July 2023</em>
-  </div>
-  </div>  
-  <div class="spacer"></div>
+    <footer class="footer">
+      <hr />
+      <p>Skinatro 2024 | Static Site Generator is WIP :3</p>
+    </footer>
 
-  <footer class="footer">
-    <hr>
-    <p>Skinatro 2024 | Static Site Generator is WIP :3</p>
-  </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const themeToggle = document.getElementById("themeToggle");
+        const body = document.body;
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('themeToggle');
-    const body = document.body;
+        updateTheme();
 
-    themeToggle.addEventListener('click', () => {
-        body.classList.toggle('light-theme');
-        updateIcon();
-    });
+        themeToggle.addEventListener("click", () => {
+          body.classList.toggle("light-theme");
+          updateIcon();
+        });
 
-    function updateIcon() {
-        const icon = themeToggle.querySelector('.material-symbols-outlined');
-        if (body.classList.contains('light-theme')) {
-            icon.textContent = 'dark_mode';
-        } else {
-            icon.textContent = 'light_mode';
+        function updateTheme() {
+          if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            body.classList.remove("light-theme");
+          } else {
+            body.classList.add("light-theme");
+          }
+          updateIcon();
         }
-    }
-});
-  </script>
-</body>
+
+        function updateIcon() {
+          const icon = themeToggle.querySelector(".material-symbols-outlined");
+          if (body.classList.contains("light-theme")) {
+            icon.textContent = "dark_mode";
+          } else {
+            icon.textContent = "light_mode";
+          }
+        }
+      });
+    </script>
+  </body>
 </html>
